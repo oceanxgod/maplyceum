@@ -1,5 +1,29 @@
 {
   "1": {
+    "библиотека": {
+      "monday": [
+        {
+          "subject": "Литература",
+          "teacher": "Иванова А.П.",
+          "groups": ["9А", "9Б"],
+          "start_time": "10:00",
+          "end_time": "11:30"
+        }
+      ],
+      "tuesday": [],
+      "wednesday": [
+        {
+          "subject": "Внеклассное чтение",
+          "teacher": "Петрова С.И.",
+          "groups": ["5А"],
+          "start_time": "13:00",
+          "end_time": "14:30"
+        }
+      ],
+      "thursday": [],
+      "friday": [],
+      "saturday": []
+    },
     "101": {
       "monday": [
         {
