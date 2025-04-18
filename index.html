@@ -266,6 +266,19 @@
       margin-bottom: 8px;
       color: var(--primary-color);
     }
+    .footer {
+      position: fixed;
+      bottom: 10px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      color: var(--text-color);
+      opacity: 0.3;
+      font-size: 0.9em;
+      pointer-events: none;
+      user-select: none;
+      z-index: 1000;
+    }
 
   </style>
 </head>
@@ -384,6 +397,10 @@
 <div id="room-info">
   <div class="info-title">Выберите кабинет</div>
   <p>Нажмите на любой кабинет, чтобы увидеть текущее расписание</p>
+
+  <div class="footer">
+    developed by oceanxgod
+  </div>
 </div>
 
 <script>
