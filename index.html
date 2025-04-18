@@ -197,7 +197,10 @@
         --room-size: 60px;
         --gap-size: 4px;
       }
-
+      .floor-1 .double-height {
+        grid-row: span 2;
+        min-height: calc(var(--room-size) * 2 + var(--gap-size));
+      }
       .floor-2,
       .floor-3 {
         grid-template-columns: repeat(4, 1fr);
@@ -311,14 +314,15 @@
 <!-- Карта 1 этажа -->
 <div class="floor-map floor-1">
   <!-- Верхний ряд -->
+  <!-- Верхний ряд -->
   <div class="room" data-room="106" style="grid-column: 1; grid-row: 1;">106</div>
   <div class="room" data-room="107" style="grid-column: 2; grid-row: 1;">107</div>
   <div class="room" data-room="108" style="grid-column: 3; grid-row: 1;">108</div>
   <div class="room" data-room="118" style="grid-column: 4; grid-row: 1;">118</div>
   <div class="room" data-room="119" style="grid-column: 5; grid-row: 1;">119</div>
-  <div class="room non-clickable" style="grid-column: 6; grid-row: 1; background: #008bb1;">Столовая</div>
-
+  <div class="room" data-room="библиотека" style="grid-column: 6; grid-row: 1;">Библиотека</div>
   <!-- Средний ряд -->
+  <div class="room non-clickable double-height" style="grid-column: 5; grid-row: 2 / span 2; background: #008bb1;">Столовая</div>
   <div class="room" data-room="105" style="grid-column: 1; grid-row: 2;">105</div>
   <div class="room" data-room="104" style="grid-column: 1; grid-row: 3;">104</div>
   <div class="room" data-room="120" style="grid-column: 6; grid-row: 2;">120</div>
